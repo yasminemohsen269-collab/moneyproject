@@ -1,33 +1,31 @@
-import 'package:financeapp/core/utils/app_color.dart';
-import 'package:financeapp/core/utils/app_fonts.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:moneyproject/utils/app_color.dart';
+import 'package:moneyproject/utils/app_fonts.dart';
 
 class AppStyles {
   static TextStyle praimaryHeadLineStyle = TextStyle(
     fontFamily: AppFonts.mainFont,
-    fontWeight: FontWeight.bold,
-    fontSize: 30.sp,
-    color: AppColor.praimaryColor,
+    fontWeight: FontWeight.w600,
+    fontSize: 45,
+    color: AppColor.secondary,
   );
 
   static TextStyle subTitleStyles = TextStyle(
-    fontFamily: AppFonts.mainFont,
+    fontFamily: AppFonts.secondaryFont,
     fontWeight: FontWeight.w400,
-    fontSize: 16.sp,
-    color: AppColor.secondaryColor,
+    fontSize: 17,
+    color: AppColor.subTitleColor,
   );
-  static TextStyle bkackStyle = TextStyle(
+  static TextStyle top = TextStyle(
     fontFamily: AppFonts.mainFont,
     fontWeight: FontWeight.w500,
-    fontSize: 16.sp,
-    color: AppColor.blackColor,
+    fontSize: 16,
+    color: AppColor.secondary,
   );
-  static TextStyle bkack15boldStyle = TextStyle(
+  static TextStyle black15boldStyle = TextStyle(
     fontFamily: AppFonts.mainFont,
-    fontWeight: FontWeight.bold,
-    fontSize: 15,
-
-    color: AppColor.blackBlue,
+    fontWeight: FontWeight.w500,
+    fontSize: 16,
+    color: AppColor.onSurface,
   );
 }

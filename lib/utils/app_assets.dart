@@ -11,10 +11,7 @@ class AppAssets {
   static const String newCard = 'assets/images/newCard.png';
   static const String arrowBack = 'assets/icons/Back.svg';
   static const String paypall = 'assets/icons/paypall.svg';
-
   static const String amazon = 'assets/icons/amazon.svg';
-
   static const String macIcon = 'assets/icons/mac.svg';
-
   static const String appleIcon = 'assets/icons/apple.svg';
 }

@@ -1,9 +1,8 @@
-import 'package:financeapp/core/utils/app_color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:moneyproject/utils/app_color.dart';
 
-class PrimaryButton extends StatelessWidget {
-  const PrimaryButton({
+class CustomButton extends StatelessWidget {
+  const CustomButton({
     super.key,
     this.text,
     this.color,
@@ -26,19 +25,18 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-
       style: ElevatedButton.styleFrom(
-        backgroundColor: color ?? AppColor.praimaryColor,
+        backgroundColor: color ?? AppColor.primaryColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(border ?? 8.r),
+          borderRadius: BorderRadius.circular(border ?? 6),
         ),
-        fixedSize: Size(width ?? 331.w, height ?? 56.h),
+        fixedSize: Size(width ?? 286, height ?? 54),
       ),
       child: Text(
         text ?? "",
         style: TextStyle(
           color: textColor ?? Colors.white,
-          fontSize: fontSize ?? 16.sp,
+          fontSize: fontSize ?? 15,
         ),
       ),
     );
